@@ -1,0 +1,44 @@
+
+body {
+margin: 0;
+padding: 0;
+background-color: 	#00ff00;
+}
+.contenedor{
+
+
+    padding: 5px;
+    margin: 5px;
+    height: 300px;
+    width: 1200px;  
+    contain:content;
+    top: ;
+    bottom: ;
+    left:150px ;
+    right: ;
+}
+.contenedor img{
+   
+
+    border-radius: 10px;
+    position: relative;
+    top: ;
+    bottom: ;
+    left:150px ;
+    right: ;
+    
+ 
+}
+ .izquierda{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    bottom:5px ;
+    left: ;
+    right:;
+    background-color: blue;
+    height: 300px;
+}

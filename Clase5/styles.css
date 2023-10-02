@@ -1,0 +1,90 @@
+body{
+    color: #fff;
+    background-color: #3aafab;
+    font: "italic","helvetica neue",sans-serif;
+    font: normal 18px;
+}
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 10px auto 10px auto;
+}
+/*
+* significa que se le aplica a todo lo que hay en el contenedor
+*/
+.container *{
+    box-sizing: border-box;
+
+}
+.flex-outer,
+.flex-inner{
+    /*Quito los puntos de los UL y LI*/
+    list-style-type: none;
+    /*No me quite espacio del contenido*/
+    padding: 0;
+}
+.flex-outer{
+max-width: 800px;
+margin: 0 auto;
+}
+.flex-outer li{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.flex-inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/*> Se le aplica a todos los hijos de la clase flex-outher
+> se le aplica a los hojo se los li que son hijos de la clase flex-outer*/
+.flex-outer >li:not(:last-child){
+    margin-bottom: 20px;
+}
+.flex-inner{
+    padding: 0 20px;
+    justify-content: space-center;
+}
+.flex-outer li label, 
+.flex-outer li p{
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    padding: 8px;
+    font-weight: 300;
+}
+
+.flex-outer>li>label,
+.flex-outer li p{
+flex: 1 0 120px;
+max-width: 200px;
+}
+
+.flex-outer>li>label + *, 
+.flex-inner{
+    flex: 1 0 220px;
+    
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea{
+    padding: 15px;
+    border: none;
+}
+
+.flex-outer li button{
+    background-color: blueviolet;
+    color: antiquewhite;
+    margin: auto;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    letter-spacing: 0.4em;
+}
+
+.flex-outer{
+    display:contents;
+    
+}
+
+

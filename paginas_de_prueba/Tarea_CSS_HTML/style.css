@@ -1,0 +1,140 @@
+@import url(https://fonts.google.com/specimen/Roboto);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+   height: 100%; 
+  
+}
+
+body{
+    display: flex;
+    font-family:"Roboto", sans-serif ;
+    font-size: 1.2rem;
+    min-height :100%; ;
+}
+
+.grid-container>*{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0.75);
+    border-radius: 5px;
+    text-align: center;
+   
+}
+
+.header{
+    grid-area: header;
+    background-color: #88dc65;
+   
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: #88dc65;
+    align-items: center;
+   
+  
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main{
+    grid-area: main;
+    background-color: #88dc65;
+    
+    
+}
+
+
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #88dc65;
+   
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #88dc65;
+   
+}
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template:
+    "header"    100px
+    "navbar"    50px
+    "main"      auto
+    "sidebar"   100px
+    "footer"    100px;
+}
+
+@media (min-width:600px){
+
+    .grid-container{
+        background-color: #88dc65;
+        grid-template: 
+        "header header"     100px
+        "navbar navbar"     50px
+        "main   sidebar"    auto
+        "footer footer"     100px/
+        200px   auto;
+        
+    }
+
+    .navbar ul li {
+        display: inline;
+        padding: 50px;
+        margin: 5px;
+        
+    
+    }
+}
+
+@media (min-width:900px){
+
+    .grid-container{
+        background-color: yellow;
+        grid-template: 
+        "header header header"     100px
+        "navbar main sidebar "     auto
+        "footer footer footer"     100px/
+         200px   auto   200px;
+        
+    }
+
+    .navbar ul li {
+        vertical-align: 100%; 
+        text-align: center;        
+    }
+    .navbar ul li a {
+      margin: 0;
+      padding: 5px;   
+            
+    }
+}
+
+.navbar ul li {
+    display: inline;
+    padding: 50px;
+    margin: 5px;
+    
+
+}
+
+.navbar ul li a{
+color: black;
+
+}
+
+
+/*
+los tamaños de las pantallas son
+Pequeña	hasta 640 píxeles	320x569, 360x640, 480x854
+Medio	641 - 1007px	960 x 540
+Grande	1008 píxeles y versiones posteriores	1024 x 640, 1366 x 768, 1920 x 1080
+*/

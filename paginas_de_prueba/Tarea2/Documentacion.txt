@@ -1,0 +1,47 @@
+Entregable HTML y CSS
+
+Enunciado
+Se debe crear una página web que sólo use HTML y CSS. El tema, el
+contenido, colores, etiquetas entre otros lo decide cada estudiante.
+Cómo mínimo debe contener 10 etiquetas distintas en el html de su página
+Web. Los estilos CSS deben ser específicos, como lo visto en clase. Para la
+ubicación de los componentes en la Web, se debe usar Flexbox.
+
+Rúbrica de evaluación
+
+Obligatorias:
+
+● No se debe usar la etiqueta <div></div>. Se cobrará 0.1 por cada uso
+de dicha etiqueta.
+● La página debe contener como mínimo 10 etiquetas distintas en su
+construcción. Rebaja de 0.5 si no cumple
+● El CSS debe contener la mayor especificidad posible. Debe contener
+como mínimo 10 estilos que no sean .class ó #id. Rebaja de 0.5 si no
+cumple.
+● Uso de Flexbox para la distribución del espacio de la página. Rebaja
+de 0.5 si no cumple.
+● Un único archivo CSS (sin usar librerías) para los estilos de la página.
+Rebaja de 0.5 si no cumple.
+
+DESARROLLO DE LA ACTIVIDAD
+
+* El tema es una página para un empredimiento infantil de busuteria donde
+todos los artuculos se hacen a mano, pero adicional a esto tamblien, alojará 
+otros emprendimientos de aseo, replicas de perfumeria y velas.
+
+
+Las etiquetas usadas en la tarea son:
+1. header *
+2. section *
+3. img *
+4. ul *
+5. li *
+6. nav *
+7. a *
+8. article *
+9. h1 *
+10. p *
+11. br *
+12. i *
+13. footer *
+
